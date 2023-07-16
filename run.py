@@ -1,14 +1,55 @@
+instructions = "Welcome to Madlads for Libs,\n" + "please select the theme of your madlibs"
+
+print(instructions)
+
+def madlibs01():
+    noun = input("noun: ")
+    verb = input("verb: ")
+    noun2 = input("noun: ")
+    noun3 = input("noun: ")
+    verb2 = input("verb: ")
+    noun4 = input("noun: ")
+
+    madlibs = f"hey! This is my {noun}. It is {verb} for {noun2} and we have fun with {noun3}. Make sure you {verb2} and eat {noun4}."
+    print(madlibs)
+
+def madlibs02():
+    print("this is a filler for madlib number 2")
+
+def madlibs03():
+    print("this is a filler for madlib number 3")
+
+
+
+selection = int(input("select Madlibs theme: "))
+
+
+if selection <= 3:
+    if selection == 1:
+        madlibs01()
+    elif selection == 2:
+        madlibs02()
+    elif selection == 3:
+        madlibs03()
+    else:
+        print(instructions)
+
+
+
+
 """
-noun = input("noun: ")
-verb = input("verb: ")
-noun2 = input("noun: ")
-noun3 = input("noun: ")
-verb2 = input("verb: ")
-noun4 = input("noun: ")
+def madlibs(selection, noun, verb, noun_two):
+    madlibsArray=[f"I went to the zoo found {noun} and {verb} it while {noun_two} watched", f"I want to the hospital, I got {noun} in the {verb} {noun2}"]
+    return madlibsArray[selection]
 
-madlibs = f"hey! Welcome to my {noun}. Here, we {verb} about {noun2} and we have fun with {noun3}. Make sure you {verb2} to my {noun4}."
+selection = input("selection: ")
+noun = input("A noun: ")
+verb = input("A verb: ")
+noun_two = input("Another noun: ") 
+madlibs(selection, verb , noun_two)
+"""
 
-
+"""
 adjective11 = input("adjective one: ")
 adjective12 = input("adjective two: ")
 adjective13 = input("adjective three: ")
@@ -31,35 +72,4 @@ madlibs2 = f"Every year, you should go visit the doctor. It is a very {adjective
 
 
 print(madlibs)
-
-selection = input("select Madlibs theme: ")
-
-
-while True:
-    if selection = 1:
-        print(madlibs01)
-    elif selection = 2:
-        print(madlibs02)
-    elif selection = 3:
-        print(madlibs03)
-    else:
-        print(instructions)
 """
-
-instructions = "Welcome to Madlads for Libs,\n" + "please select the theme of your madlibs"
-
-print(instructions)
-
-def madlibs(selection, noun, verb, noun_two):
-    madlibsArray=[f"I went to the zoo found {noun} and {verb} it while {noun_two} watched", f"I want to the hospital, I got {noun} in the {verb} {noun2}"]
-    return madlibsArray[selection]
-
-selection = input("selection: ")
-noun = input("A noun: ")
-verb = input("A verb: ")
-noun_two = input("Another noun: ") 
-madlibs(selection, verb , noun_two)
-
-
-
-    
