@@ -1,3 +1,4 @@
+"""
 noun = input("noun: ")
 verb = input("verb: ")
 noun2 = input("noun: ")
@@ -30,3 +31,35 @@ madlibs2 = f"Every year, you should go visit the doctor. It is a very {adjective
 
 
 print(madlibs)
+
+selection = input("select Madlibs theme: ")
+
+
+while True:
+    if selection = 1:
+        print(madlibs01)
+    elif selection = 2:
+        print(madlibs02)
+    elif selection = 3:
+        print(madlibs03)
+    else:
+        print(instructions)
+"""
+
+instructions = "Welcome to Madlads for Libs,\n" + "please select the theme of your madlibs"
+
+print(instructions)
+
+def madlibs(selection, noun, verb, noun_two):
+    madlibsArray=[f"I went to the zoo found {noun} and {verb} it while {noun_two} watched", f"I want to the hospital, I got {noun} in the {verb} {noun2}"]
+    return madlibsArray[selection]
+
+selection = input("selection: ")
+noun = input("A noun: ")
+verb = input("A verb: ")
+noun_two = input("Another noun: ") 
+madlibs(selection, verb , noun_two)
+
+
+
+    
