@@ -2,24 +2,26 @@ import sys
 
 from termcolor import colored, cprint
 
-"""
-    Here are the color selections
-"""
+#Here are the color selections POSIBLE ERROR CHANGE THIS
 print_yellow_bold = lambda x: cprint(x, "yellow", attrs=["bold"])
-print_yellow_bold = lambda x: cprint(x, "yellow", attrs=["bold"])
+print_red_bold = lambda x: cprint(x, "red", attrs=["bold"])
 
 
-"""
+def opening_function():
+    """
     This is the welcome message and the instructions
-"""
-instructions = "Welcome to Madlads for Libs,\n" + "please select the theme of your madlibs"
+    """
+    print_yellow_bold(
+        "Welcome to Madlads for Libs,\n" +
+        "please select the theme of your madlibs"
+    )
+    main_choice()
 
-print_yellow_bold(instructions)
 
-"""
-    This is the different madlibs templates
-"""
 def madlibs01():
+    """
+    Madlibs theme number 1
+    """
     noun = input(colored("noun: ", "blue", attrs=["bold"]))
     verb = input(colored("verb: ", "blue", attrs=["bold"]))
     noun2 = input(colored("noun: ", "blue", attrs=["bold"]))
@@ -27,22 +29,51 @@ def madlibs01():
     verb2 = input(colored("verb: ", "blue", attrs=["bold"]))
     noun4 = input(colored("noun: ", "blue", attrs=["bold"]))
 
-    madlibs = f"hey! This is my {noun}. It is {verb} for {noun2} and we have fun with {noun3}. Make sure you {verb2} and eat {noun4}."
-    print_yellow_bold(madlibs)
+    if noun.isalpha() == False:
+        print_red_bold("Please provide a word")
+        madlibs01()
+    elif verb.isalpha() == False:
+        print_red_bold("Please provide a word")
+        madlibs01()
+    elif noun2.isalpha() == False:
+        print_red_bold("Please provide a word")
+        madlibs01()
+    elif noun3.isalpha() == False:
+        print_red_bold("Please provide a word")
+        madlibs01()
+    elif verb2.isalpha() == False:
+        print_red_bold("Please provide a word")
+        madlibs01()
+    elif noun4.isalpha() == False:
+        print_red_bold("Please provide a word")
+        madlibs01()
+    else:
+        madlibs = print_yellow_bold(
+        f"hey! This is my {noun}. It is {verb} for {noun2}" +
+        f" and we have fun with {noun3}. " +
+        f"Make sure you {verb2} and eat {noun4}."
+    )
+
 
 def madlibs02():
+    """
+    Madlibs theme number 2
+    """
     print("this is a filler for madlib number 2")
 
 def madlibs03():
+    """
+    Madlibs theme number 3
+    """
     print("this is a filler for madlib number 3")
 
 
-"""
-    This function allows the user to select a theme
-"""
-selection = int(input(colored("select Madlibs theme: ", "blue", attrs=["reverse", "blink"])))
+def main_choice():
+    selection = int(input(colored("select Madlibs theme: ", "blue", attrs=["reverse", "blink"])))
 
-if selection <= 3: #This line unnecessary?
+    """
+    This function allows the user to select a theme
+    """
     if selection == 1:
         madlibs01()
     elif selection == 2:
@@ -50,9 +81,13 @@ if selection <= 3: #This line unnecessary?
     elif selection == 3:
         madlibs03()
     else:
-        print(instructions)
+        print("Invalid selection, please try again")
+        main_choice()
 
+def main():
+    opening_function()
 
+main()
 """
 def madlibs(selection, noun, verb, noun_two):
     madlibsArray=[f"I went to the zoo found {noun} and {verb} it while {noun_two} watched", f"I want to the hospital, I got {noun} in the {verb} {noun2}"]
@@ -88,4 +123,16 @@ madlibs2 = f"Every year, you should go visit the doctor. It is a very {adjective
 
 
 print(madlibs)
+"""
+"""
+madlibs2 = print(
+    f"Every year, you should go visit the doctor. It is a very {adjective11}" +
+    f" visit. Usually you have to skip going to {place11} to go. Your doctor " +
+    f"is usualy a/n {adjective12} man or wonam who is wearing a/an " +
+    f"{adjective13} {pieceofcloth11}. They will look at your {bodypart11}," +
+    f" {bodypart12} and {bodypart13}. Sometimes, they can be very" +
+    f" {adjective14}. Afterwards, they will give you a {noun11} and a " +
+    f"{noun12}, and your mom or dad will take you to {place12} as a treat." +
+    f" All in all, the doctor's office isn't so {adjective15}."
+)
 """
