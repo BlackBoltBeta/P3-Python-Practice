@@ -9,8 +9,11 @@ def opening_function():
     This is the welcome message and the instructions
     """
     print(colored(
-        "Welcome to Madlads for Libs,\n" +
-        "please select the theme of your madlibs",
+        "Welcome to Random Madlibs.\n" +
+        "Please select the theme of your madlibs:\n" +
+        "Type 1 for Instructions for the Babysiter.\n"
+        "Type 2 for Going to the doctor.\n"
+        "Type 3 for Bats are so cool.\n",
         "yellow", attrs=["bold"]))
     main_choice()
 
@@ -19,6 +22,9 @@ def madlibs01():
     """
     Madlibs theme number 1
     """
+    print(
+        colored("Instructions for the Babysiter")
+    )
     adjective11 = input(colored("adjective: ", "blue", attrs=["bold"]))
     plural_nou11 = input(colored("plural noun: ", "blue", attrs=["bold"]))
     plural_nou12 = input(colored("A plural noun: ", "blue", attrs=["bold"]))
@@ -78,7 +84,9 @@ def madlibs02():
     """
     Madlibs theme number 2
     """
-    print("Visiting the doctor")
+    print(
+        colored("Going to the doctor")
+    )
     adjective21 = input(colored("An adjective: ", "blue", attrs=["bold"]))
     adjective22 = input(colored("An adjective: ", "blue", attrs=["bold"]))
     adjective23 = input(colored("Another adjective: ", "blue", attrs=["bold"]))
@@ -166,6 +174,9 @@ def madlibs03():
     """
     Madlibs theme number 3
     """
+    print(
+        colored("Bats are so cool.")
+    )
     color31 = input(colored("A color: ", "blue", attrs=["bold"]))
     adjective31 = input(colored("An adjective: ", "blue", attrs=["bold"]))
     time31 = input(colored("A time of day: ", "blue", attrs=["bold"]))
