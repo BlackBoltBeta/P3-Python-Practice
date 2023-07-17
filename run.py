@@ -42,7 +42,7 @@ def madlibs03():
 """
 selection = int(input(colored("select Madlibs theme: ", "blue", attrs=["reverse", "blink"])))
 
-if selection <= 3:
+if selection <= 3: #This line unnecessary?
     if selection == 1:
         madlibs01()
     elif selection == 2:
