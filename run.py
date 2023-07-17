@@ -1,17 +1,34 @@
+import sys
+
+from termcolor import colored, cprint
+
+"""
+    Here are the color selections
+"""
+print_yellow_bold = lambda x: cprint(x, "yellow", attrs=["bold"])
+print_yellow_bold = lambda x: cprint(x, "yellow", attrs=["bold"])
+
+
+"""
+    This is the welcome message and the instructions
+"""
 instructions = "Welcome to Madlads for Libs,\n" + "please select the theme of your madlibs"
 
-print(instructions)
+print_yellow_bold(instructions)
 
+"""
+    This is the different madlibs templates
+"""
 def madlibs01():
-    noun = input("noun: ")
-    verb = input("verb: ")
-    noun2 = input("noun: ")
-    noun3 = input("noun: ")
-    verb2 = input("verb: ")
-    noun4 = input("noun: ")
+    noun = input(colored("noun: ", "blue", attrs=["bold"]))
+    verb = input(colored("verb: ", "blue", attrs=["bold"]))
+    noun2 = input(colored("noun: ", "blue", attrs=["bold"]))
+    noun3 = input(colored("noun: ", "blue", attrs=["bold"]))
+    verb2 = input(colored("verb: ", "blue", attrs=["bold"]))
+    noun4 = input(colored("noun: ", "blue", attrs=["bold"]))
 
     madlibs = f"hey! This is my {noun}. It is {verb} for {noun2} and we have fun with {noun3}. Make sure you {verb2} and eat {noun4}."
-    print(madlibs)
+    print_yellow_bold(madlibs)
 
 def madlibs02():
     print("this is a filler for madlib number 2")
@@ -20,9 +37,10 @@ def madlibs03():
     print("this is a filler for madlib number 3")
 
 
-
-selection = int(input("select Madlibs theme: "))
-
+"""
+    This function allows the user to select a theme
+"""
+selection = int(input(colored("select Madlibs theme: ", "blue", attrs=["reverse", "blink"])))
 
 if selection <= 3:
     if selection == 1:
@@ -33,8 +51,6 @@ if selection <= 3:
         madlibs03()
     else:
         print(instructions)
-
-
 
 
 """
