@@ -19,42 +19,57 @@ def madlibs01():
     """
     Madlibs theme number 1
     """
-    noun = input(colored("noun: ", "blue", attrs=["bold"]))
-    verb = input(colored("verb: ", "blue", attrs=["bold"]))
-    noun2 = input(colored("noun: ", "blue", attrs=["bold"]))
-    noun3 = input(colored("noun: ", "blue", attrs=["bold"]))
-    verb2 = input(colored("verb: ", "blue", attrs=["bold"]))
-    noun4 = input(colored("noun: ", "blue", attrs=["bold"]))
+    adjective11 = input(colored("adjective: ", "blue", attrs=["bold"]))
+    plural_nou11 = input(colored("plural noun: ", "blue", attrs=["bold"]))
+    plural_nou12 = input(colored("A plural noun: ", "blue", attrs=["bold"]))
+    plural_nou13 = input(colored("more plural noun: ", "blue", attrs=["bold"]))
+    plural_nou14 = input(colored("A plural noun: ", "blue", attrs=["bold"]))
+    adverb11 = input(colored("An adverb: ", "blue", attrs=["bold"]))
+    noun11 = input(colored("One noun: ", "blue", attrs=["bold"]))
+    noun12 = input(colored("Another noun: ", "blue", attrs=["bold"]))
 
-    if noun.isalpha() is False:
+    if adjective11.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs01()
-    elif verb.isalpha() is False:
+    elif plural_nou11.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs01()
-    elif noun2.isalpha() is False:
+    elif plural_nou12.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs01()
-    elif noun3.isalpha() is False:
+    elif plural_nou13.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs01()
-    elif verb2.isalpha() is False:
+    elif plural_nou14.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs01()
-    elif noun4.isalpha() is False:
+    elif adverb11.isalpha() is False:
+        print(colored(
+            "Please make sure you input only words", "red", attrs=["bold"]))
+        madlibs01()
+    elif noun11.isalpha() is False:
+        print(colored(
+            "Please make sure you input only words", "red", attrs=["bold"]))
+        madlibs01()
+    elif noun12.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs01()
     else:
         madlibs1 = print(colored(
-            f"hey! This is my {noun}. It is {verb} for {noun2}" +
-            f" and we have fun with {noun3}. " +
-            f"Make sure you {verb2} and eat {noun4}.",
+            f"The boys can watch an hour of {adjective11} television " +
+            f"before turning off the {plural_nou11} in their room." +
+            f"Make sure they do not watch any violent {plural_nou12}" +
+            f"or adult {plural_nou13}" +
+            f". If there are any phone {plural_nou14}," +
+            f"do not identify yourself as the {adverb11}-sitter." +
+            f"Take a message. Write it {noun11} " +
+            f"on the {noun12} provided.",
             "yellow", attrs=["bold"])
         )
 
@@ -63,38 +78,38 @@ def madlibs02():
     """
     Madlibs theme number 2
     """
-    print("NUMBER 2")  # AAAAAAAAAAAAAAAAAAAA
-    adjective11 = input(colored("An adjective: ", "blue", attrs=["bold"]))
-    adjective12 = input(colored("An adjective: ", "blue", attrs=["bold"]))
-    adjective13 = input(colored("Another adjective: ", "blue", attrs=["bold"]))
-    adjective14 = input(colored("Adjective please: ", "blue", attrs=["bold"]))
-    adjective15 = input(colored("Adjective again: ", "blue", attrs=["bold"]))
+    print("Visiting the doctor")
+    adjective21 = input(colored("An adjective: ", "blue", attrs=["bold"]))
+    adjective22 = input(colored("An adjective: ", "blue", attrs=["bold"]))
+    adjective23 = input(colored("Another adjective: ", "blue", attrs=["bold"]))
+    adjective24 = input(colored("Adjective please: ", "blue", attrs=["bold"]))
+    adjective25 = input(colored("Adjective again: ", "blue", attrs=["bold"]))
     place11 = input(colored("A place: ", "blue", attrs=["bold"]))
-    pieceofcloth11 = input(colored("Some clothing: ", "blue", attrs=["bold"]))
-    bodypart11 = input(colored("a body part: ", "blue", attrs=["bold"]))
-    bodypart12 = input(colored("another body part: ", "blue", attrs=["bold"]))
-    bodypart13 = input(colored("a third body part: ", "blue", attrs=["bold"]))
-    noun11 = input(colored("a noun: ", "blue", attrs=["bold"]))
-    noun12 = input(colored("a second noun: ", "blue", attrs=["bold"]))
-    place12 = input(colored("another place: ", "blue", attrs=["bold"]))
+    pieceofcloth21 = input(colored("Some clothing: ", "blue", attrs=["bold"]))
+    bodypart21 = input(colored("a body part: ", "blue", attrs=["bold"]))
+    bodypart22 = input(colored("another body part: ", "blue", attrs=["bold"]))
+    bodypart23 = input(colored("a third body part: ", "blue", attrs=["bold"]))
+    noun21 = input(colored("a noun: ", "blue", attrs=["bold"]))
+    noun22 = input(colored("a second noun: ", "blue", attrs=["bold"]))
+    place22 = input(colored("another place: ", "blue", attrs=["bold"]))
 
-    if adjective11.isalpha() is False:
+    if adjective21.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif adjective12.isalpha() is False:
+    elif adjective22.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif adjective13.isalpha() is False:
+    elif adjective23.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif adjective14.isalpha() is False:
+    elif adjective24.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif adjective15.isalpha() is False:
+    elif adjective25.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
@@ -102,46 +117,46 @@ def madlibs02():
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif pieceofcloth11.isalpha() is False:
+    elif pieceofcloth21.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif bodypart11.isalpha() is False:
+    elif bodypart21.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif bodypart12.isalpha() is False:
+    elif bodypart22.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif bodypart13.isalpha() is False:
+    elif bodypart23.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif noun11.isalpha() is False:
+    elif noun21.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif noun12.isalpha() is False:
+    elif noun22.isalpha() is False:
         print(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
-    elif place12.isalpha() is False:
+    elif place22.isalpha() is False:
         pprint(colored(
             "Please make sure you input only words", "red", attrs=["bold"]))
         madlibs02()
     else:
         madlibs2 = print(colored(
-            f"Every year, you visit the doctor. It is very {adjective11}. " +
-            f"Usually you have to skip going to {place11} to go." +
-            f"Your doctor is usualy a {adjective12} person" +
-            f"who is wearing a/an {adjective13} {pieceofcloth11}." +
-            " They will look at your {bodypart11}" +
-            f", {bodypart12} and {bodypart13}." +
-            f"They can be very {adjective14}. Afterwards," +
-            f"they will give you a {noun11} and a " +
-            f"{noun12}, and then you will go to {place12} as a treat." +
-            f" All in all, the doctor's office isn't so {adjective15}.",
+            f"Every year, you visit the doctor. It is very {adjective21}. " +
+            f"Usually you have to skip going to {place21} to go." +
+            f"Your doctor is usualy a {adjective22} person" +
+            f"who is wearing a/an {adjective23} {pieceofcloth21}." +
+            " They will look at your {bodypart21}" +
+            f", {bodypart22} and {bodypart23}." +
+            f"They can be very {adjective24}. Afterwards," +
+            f"they will give you a {noun21} and a " +
+            f"{noun22}, and then you will go to {place22} as a treat." +
+            f" All in all, the doctor's office isn't so {adjective25}.",
             "yellow", attrs=["bold"])
         )
 
